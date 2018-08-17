@@ -1,0 +1,26 @@
+<view class="main">
+    <view class="newest">
+        <view class="newest-title"><text>最近新品</text></view>
+<block wx:for-items="{{result}}">
+    <view style="width:100%; height: 50rpx"></view>
+    <!--index默认为下标，item为每项-->
+    <text>{{item.name}}</text>
+    <text>{{item.price}}</text>
+    <text>{{item.url}}</text>
+</block>
+
+<!--
+        <view class="newest-box">
+         <view class="newest-list">
+                <navigator url="details/details">
+                    <view  wx:for="{{logs}}" wx:for-item="value">
+                    <image src="{{value.url}}"></image>
+                    <view class="newest-text"><text>{{value.name}}</text></view>
+                    <view class="newest-text"><text>￥{{value.price}}</text></view>
+                </navigator>
+
+                
+            </view>  
+        </view>-->
+    </view>
+</view>
