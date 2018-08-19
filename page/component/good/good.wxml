@@ -1,0 +1,15 @@
+<view class="main">
+    <view class="newest">
+        <view class="newest-title"><text>最近新品</text></view>
+        <view class="newest-box">
+         <view class="newest-list"  wx:for-items="{{result.data}}" wx:key="user_id">
+                <navigator url="details/details">                    
+                    <image src=""></image>
+                    <view class="newest-text"><text>{{item.user_id}}</text></view>
+                    <view class="newest-text"><text>{{item.user_email}}</text></view>
+                </navigator>               
+          </view>  
+          
+        </view>
+    </view>
+</view>

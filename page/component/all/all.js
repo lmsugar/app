@@ -1,4 +1,4 @@
-// page/component/category/category.js
+// page/component/all/all.js
 Page({
 
   /**
